@@ -1,4 +1,4 @@
-package demo1;
+package jdbc.demo;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
