@@ -9,7 +9,6 @@ import java.util.Properties;
 
 public class JDBCUtils {
 	
-	private String conf;
 	private static String DRIVER;
 	private static String URL;
 	private static String USERNAME;
