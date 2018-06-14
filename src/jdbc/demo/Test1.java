@@ -13,7 +13,13 @@ public class Test1 {
 	*/
 	public static void main(String[] args) throws Exception {
 //		Connection conn = JDBCUtils.getConn();
+
 	}
+	
+	
+	
+	
+	
 	
 	@Test
 	public void getAll() {
