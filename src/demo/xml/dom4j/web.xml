@@ -5,7 +5,7 @@
 
 	<servlet>
 		<servlet-name>testServlet</servlet-name>
-		<servlet-class>src/xxxx/testServlet.class</servlet-class>
+		<servlet-class>demo.xml.dom4j.Test</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>testServlet</servlet-name>
