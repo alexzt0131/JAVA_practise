@@ -12,23 +12,23 @@ public class Dom4jTest {
 	
 	
 	public static void main(String[] args) {
-		//»ñµÃsaxreaderÊµÀı
+		//è·å¾—saxreaderå®ä¾‹
 		SAXReader reader = new SAXReader();
 		
 		try {
-			//»ñµÃxmlÎÄµµ
+			//è·å¾—xmlæ–‡æ¡£
 			Document document = reader.read("src/demo/xml/dom4j/web.xml");
-			//»ñµÃ¸ùÔªËØ
+			//è·å¾—æ ¹å…ƒç´ 
 			Element rootElement = document.getRootElement();
-			//¸ùÔªËØÃû³Æ
+			//æ ¹å…ƒç´ åç§°
 			String nodeName = rootElement.getName();
 			System.out.println(nodeName);
-			//»ñµÃ¸ùÔªËØÏÂËùÓĞÔªËØµÄÁĞ±í
+			//è·å¾—æ ¹å…ƒç´ ä¸‹æ‰€æœ‰å…ƒç´ çš„åˆ—è¡¨
 			List<Element> elements = rootElement.elements();
-			//±éÀú¸ùÔªËØÏÂÔªËØ
+			//éå†æ ¹å…ƒç´ ä¸‹å…ƒç´ 
 			for (Element element : elements) {
 				String childName = element.getName();
-				System.out.println("NodeName£º"+childName);
+				System.out.println("NodeNameï¼š"+childName);
 				if("servlet".equals(childName)) {
 					Element servletName = element.element("servlet-name");
 					System.out.println("servletName:"+servletName.getText());
@@ -37,7 +37,7 @@ public class Dom4jTest {
 				}
 			}
 			System.out.println("-----------------------------");
-			//»ñµÃÖ¸¶¨ÔªËØ
+			//è·å¾—æŒ‡å®šå…ƒç´ 
 			Element servletMapping = rootElement.element("servlet-mapping");
 			System.out.println(servletMapping.getName());
 			Element servletName = servletMapping.element("servlet-name");
